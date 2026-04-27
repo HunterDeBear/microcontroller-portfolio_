@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Microcontroller Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="bg-orb"></div>
+    <div class="grain"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">THEMBALETHU SKOSANA</a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="../gallery.html">Projects</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" type="button">Dark Mode</button>
+            <button class="menu-toggle" id="menuToggle" type="button">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Project Gallery</p>
+            <h1>Embedded System Projects</h1>
+            <p>
+                A visual overview of the microcontroller-based systems included in this
+                portfolio.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="card-grid">
+                <a href="projects/gas.html" class="project-card large-card project-link-card">
+                    <img src="assets/images/gas-project.jpg"
+                         alt="Smart Gas Monitoring System"
+                         class="project-image" />
+
+                    <p class="project-number">Project 01</p>
+                    <h3>Smart Gas Monitoring System</h3>
+                    <p>
+                        Detects gas concentration levels using an analog gas sensor and
+                        provides local and wireless alerts.
+                    </p>
+
+                    <div class="status-row">
+                        <span class="status complete">Complete</span>
+                        <span>100%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 100%;"></span>
+                    </div>
+
+                    <span class="text-link">Open Project</span>
+                </a>
+
+                <a href="projects/fan.html" class="project-card large-card project-link-card">
+                    <img src="assets/images/fan-project.jpg"
+                         alt="Temperature Fan Control System"
+                         class="project-image" />
+
+                    <p class="project-number">Project 02</p>
+                    <h3>Temperature-Controlled Fan System</h3>
+                    <p>
+                        Regulates fan speed using temperature feedback, PWM control, and
+                        selectable operating modes.
+                    </p>
+
+                    <div class="status-row">
+                        <span class="status tested">Tested</span>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 90%;"></span>
+                    </div>
+
+                    <span class="text-link">Open Project</span>
+                </a>
+
+                <a href="projects/perimeter.html" class="project-card large-card project-link-card">
+                    <img src="assets/images/perimeter-project.jpg"
+                         alt="Smart Perimeter Detection System"
+                         class="project-image" />
+
+                    <p class="project-number">Project 03</p>
+                    <h3>Smart Perimeter Detection System</h3>
+                    <p>
+                        Uses a laser beam, LDR receiver, accelerometer, OLED display, and
+                        buzzer to detect intrusion and tampering.
+                    </p>
+
+                    <div class="status-row">
+                        <span class="status prototype">Prototype</span>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 85%;"></span>
+                    </div>
+
+                    <span class="text-link">Open Project</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Thembalethu Skosana | Microcontroller Project Portfolio</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact | Microcontroller Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="bg-orb"></div>
+    <div class="grain"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">THEMBALETHU SKOSANA</a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../gallery.html">Projects</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" type="button">
+                Dark Mode
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" type="button">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Contact</p>
+            <h1>Send an Inquiry</h1>
+            <p>
+                Use this form for project questions, collaboration requests, or feedback
+                about the portfolio.
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" />
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email" />
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Project Interest</label>
+                    <select id="interest">
+                        <option value="">Select a project</option>
+                        <option value="gas">Smart Gas Monitoring System</option>
+                        <option value="fan">Temperature Fan Control System</option>
+                        <option value="perimeter">Smart Perimeter Detection System</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Write your message"></textarea>
+                    <small class="error-message"></small>
+                </div>
+
+                <button class="btn primary-btn" type="submit">
+                    Send Message
+                </button>
+
+                <p class="form-success" id="formSuccess"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Thembalethu Skosana | Microcontroller Project Portfolio</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

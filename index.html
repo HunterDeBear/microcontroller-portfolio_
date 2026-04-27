@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Microcontroller Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+
+<body>
+    <div class="bg-orb"></div>
+    <div class="grain"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">THEMBALETHU SKOSANA</a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../gallery.html">Projects</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" type="button">Dark Mode</button>
+            <button class="menu-toggle" id="menuToggle" type="button">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Embedded Systems • Sensing • Control</p>
+
+                <h1>
+                    Microcontroller<br />
+                    Project Portfolio
+                </h1>
+
+                <p class="hero-description">
+                    This is a collection of some of the practical embedded system projects I've worked on using microcontrollers like the STM32 and the ESP32. It includes used sensors, displays and modules I've used and the various techniques like PMW, USART and real-time decision logics I've used to make them work.
+                </p>
+
+                <div class="hero-tags">
+                    <span>ADC</span>
+                    <span>PWM Control</span>
+                    <span>USART Communication</span>
+                    <span>SPI</span>
+                    <span>I2C</span>
+
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="gallery.html" class="btn primary-btn">View Projects</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="model-shell">
+                    <div id="model-container"></div>
+
+                    <div class="model-caption">
+                        <p>ESP32 Embedded Platform</p>
+                        <small>Floating 3D Hardware Model</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stat-card">
+                <h2>3</h2>
+                <p>Featured Projects</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>2</h2>
+                <p>Main Platforms</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>6+</h2>
+                <p>Sensors & Modules</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>100%</h2>
+                <p>Embedded Focus</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Featured Work</p>
+                <h2>Project Modules</h2>
+            </div>
+
+            <div class="card-grid">
+                <a href="projects/gas.html" class="project-card project-link-card">
+                    <img src="assets/images/gas-project.jpg" alt="Smart Gas Monitoring System" class="project-image" />
+
+                    <p class="project-number">Project 01</p>
+                    <h3>Smart Gas Monitoring</h3>
+                    <p>
+                        Real-time gas concentration monitoring using an STM32, gas sensor,
+                        LCD, HC-05 Bluetooth module, buzzer, and LEDs.
+                    </p>
+
+                    <div class="status-row">
+                        <span class="status complete">Complete</span>
+                        <span>100%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 100%;"></span>
+                    </div>
+
+                    <span class="text-link">View Project</span>
+                </a>
+
+                <a href="projects/fan.html" class="project-card project-link-card">
+                    <img src="assets/images/fan-project.jpg" alt="Temperature Fan Control System" class="project-image" />
+
+                    <p class="project-number">Project 02</p>
+                    <h3>Temperature Fan Control</h3>
+                    <p>
+                        ESP32-based thermal regulation system using DHT22 sensing, PWM fan
+                        control, MOSFET switching, and selectable cooling modes.
+                    </p>
+
+                    <div class="status-row">
+                        <span class="status tested">Tested</span>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 90%;"></span>
+                    </div>
+
+                    <span class="text-link">View Project</span>
+                </a>
+
+                <a href="projects/perimeter.html" class="project-card project-link-card">
+                    <img src="assets/images/perimeter-project.jpg" alt="Smart Perimeter Detection System" class="project-image" />
+
+                    <p class="project-number">Project 03</p>
+                    <h3>Perimeter Detection</h3>
+                    <p>
+                        Laser-based security system using an LDR receiver, ADXL
+                        accelerometer, OLED display, and buzzer alert categories.
+                    </p>
+
+                    <div class="status-row">
+                        <span class="status prototype">Prototype</span>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 85%;"></span>
+                    </div>
+
+                    <span class="text-link">View Project</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="bottom-contact">
+            <a href="contact.html" class="btn primary-btn">Contact Me</a>
+        </div>
+        <p>© 2026 Thembalethu Skosana | Microcontroller Project Portfolio</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

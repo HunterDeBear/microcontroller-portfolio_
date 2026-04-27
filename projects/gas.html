@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gas Monitoring System | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="bg-orb"></div>
+    <div class="grain"></div>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">THEMBALETHU SKOSANA</a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="../gallery.html">Gallery</a>
+            <a href="../gallery.html" class="active">Projects</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" type="button">
+                Dark Mode
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" type="button">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Project 01</p>
+            <h1>Smart Gas Monitoring System</h1>
+            <p>
+                An STM32-based gas monitoring and alert system with LCD output,
+                Bluetooth transmission, buzzer alerts, and LED level indication.
+            </p>
+        </section>
+
+        <section class="project-layout">
+            <aside class="project-sidebar">
+                <div class="content-card">
+                    <h3>Project Status</h3>
+                    <span class="status complete">Complete</span>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 100%;"></span>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Skills Used</h3>
+
+                    <div class="tag-list">
+                        <span>STM32</span>
+                        <span>ADC</span>
+                        <span>UART</span>
+                        <span>I2C LCD</span>
+                        <span>PWM</span>
+                        <span>Bluetooth</span>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>Sensors Used</h3>
+
+                    <div class="sensor-list">
+                        <button class="sensor-item"
+                                type="button"
+                                data-name="MQ Gas Sensor"
+                                data-image="../assets/images/mq-sensor.png"
+                                data-link="https://www.robotics.org.za/W9529?search=mq2">
+                            MQ Gas Sensor
+                        </button>
+
+                        <button class="sensor-item"
+                                type="button"
+                                data-name="HC-05 Module"
+                                data-image="../assets/images/hc-05-module.png"
+                                data-link="https://www.robotics.org.za/HC05-PINS-O?search=hc-05">
+                            HC-05 Module
+                        </button>
+                    </div>
+
+                    <div class="sensor-preview">
+                        <img src="../assets/images/mq-sensor.png" alt="MQ Gas Sensor" />
+                        <h4>MQ Gas Sensor</h4>
+                        <a href="https://www.robotics.org.za/W9529?search=mq2" target="_blank">
+                            Buy / View Sensor
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="project-content">
+                <article class="content-card">
+                    <h2>Overview</h2>
+                    <p>
+                        This project is an embedded gas monitoring system designed to detect
+                        gas concentration levels in real time. It uses an STM32
+                        microcontroller to process analog sensor readings and provide
+                        immediate visual, audio, and wireless alerts.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>Objective</h2>
+
+                    <ul>
+                        <li>Monitor gas concentration in real time.</li>
+                        <li>Convert analog sensor voltage into estimated PPM values.</li>
+                        <li>Display gas level and concentration on an LCD.</li>
+                        <li>Transmit data wirelessly using Bluetooth.</li>
+                        <li>Trigger LEDs and buzzer alerts based on gas level.</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h2>Components Used</h2>
+
+                    <ul>
+                        <li>STM32 Nucleo-F411RE microcontroller</li>
+                        <li>MQ gas sensor</li>
+                        <li>16x2 LCD with I2C interface</li>
+                        <li>HC-05 Bluetooth module</li>
+                        <li>Active or passive buzzer</li>
+                        <li>LED indicators</li>
+                        <li>Push buttons for display modes</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h2>Working Principle</h2>
+                    <p>
+                        The gas sensor produces an analog output voltage that changes
+                        according to the detected gas concentration. The STM32 reads this
+                        voltage using its ADC, converts it into a digital value, and then
+                        estimates the gas concentration in PPM.
+                    </p>
+
+                    <p>
+                        The processed value is displayed on the LCD, transmitted through the
+                        HC-05 Bluetooth module, and used to activate LEDs and buzzer alerts
+                        when the concentration reaches certain levels.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>Results and Insights</h2>
+
+                    <ul>
+                        <li>The system responded clearly to changes in gas concentration.</li>
+                        <li>The LCD successfully displayed gas level and PPM values.</li>
+                        <li>Bluetooth communication allowed remote monitoring.</li>
+                        <li>The buzzer and LEDs provided immediate local alerts.</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h2>Downloads</h2>
+
+                    <div class="download-grid">
+                        <a href="../downloads/gas-source-code.zip"download class="download-btn">
+                            Source Code
+                        </a>
+
+                        <a href="../downloads/gas-project-report.pdf" target="_blank" class="download-btn">
+                            Project Report
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Thembalethu Skosana | Microcontroller Project Portfolio</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

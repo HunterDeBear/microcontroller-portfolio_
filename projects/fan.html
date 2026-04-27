@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fan Control System | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <div class="bg-orb"></div>
+    <div class="grain"></div>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">THEMBALETHU SKOSANA</a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="../gallery.html">Gallery</a>
+            <a href="../gallery.html" class="active">Projects</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" type="button">
+                Dark Mode
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" type="button">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Project 02</p>
+            <h1>Temperature-Controlled Fan System</h1>
+            <p>
+                An ESP32-based thermal control system using temperature feedback, PWM
+                fan control, MOSFET driving, and selectable cooling modes.
+            </p>
+        </section>
+
+        <section class="project-layout">
+            <aside class="project-sidebar">
+                <div class="content-card">
+                    <h3>Project Status</h3>
+                    <span class="status tested">Tested</span>
+
+                    <div class="progress-bar">
+                        <span style="--progress: 90%;"></span>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Skills Used</h3>
+
+                    <div class="tag-list">
+                        <span>ESP32</span>
+                        <span>DHT22</span>
+                        <span>PWM</span>
+                        <span>MOSFET</span>
+                        <span>Control</span>
+                        <span>WiFi</span>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>Sensors Used</h3>
+
+                    <div class="sensor-list">
+                        <button class="sensor-item"
+                                type="button"
+                                data-name="DHT22 Temperature Sensor"
+                                data-image="../assets/images/dht22-sensor.png"
+                                data-link="https://www.robotics.org.za/D1-DHT22?search=dht">
+                            DHT22 Sensor
+                        </button>
+                    </div>
+
+                    <div class="sensor-preview">
+                        <img src="../assets/images/dht22-sensor.png" alt="DHT22 Temperature Sensor" />
+                        <h4>DHT22 Temperature Sensor</h4>
+                        <a href="https://www.robotics.org.za/D1-DHT22?search=dht" target="_blank">
+                            Buy / View Sensor
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="project-content">
+                <article class="content-card">
+                    <h2>Overview</h2>
+                    <p>
+                        This project is an embedded temperature regulation system that
+                        automatically controls the speed of a 12 V brushless DC fan. The
+                        system uses temperature feedback from a DHT22 sensor and adjusts fan
+                        speed through PWM.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>Objective</h2>
+
+                    <ul>
+                        <li>Measure real-time temperature using a DHT22 sensor.</li>
+                        <li>Control fan speed automatically using PWM.</li>
+                        <li>Implement Whisper, Standard, and Dynamic cooling modes.</li>
+                        <li>Reduce sudden speed changes using smoothing.</li>
+                        <li>Prevent fan stalling using a soft-start method.</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h2>Components Used</h2>
+
+                    <ul>
+                        <li>ESP32 Pico microcontroller</li>
+                        <li>DHT22 temperature sensor</li>
+                        <li>IRLZ44N MOSFET</li>
+                        <li>12 V brushless DC fan</li>
+                        <li>I2C LCD display</li>
+                        <li>Push buttons</li>
+                        <li>WiFi interface</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h2>Working Principle</h2>
+                    <p>
+                        The DHT22 sensor measures the surrounding temperature. The ESP32
+                        compares the measured value with a desired temperature range and
+                        calculates the required fan speed. A PWM signal is then sent to the
+                        MOSFET, which controls the 12 V fan.
+                    </p>
+
+                    <p>
+                        Different operating modes use different proportional gains. Whisper
+                        mode focuses on quiet operation, Standard mode balances cooling and
+                        noise, and Dynamic mode provides faster cooling response.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h2>Results and Insights</h2>
+
+                    <ul>
+                        <li>The fan speed changed smoothly based on temperature.</li>
+                        <li>Each cooling mode produced a different response.</li>
+                        <li>The system remained stable without major oscillations.</li>
+                        <li>The soft-start feature helped prevent fan stalling.</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h2>Downloads</h2>
+
+                    <div class="download-grid">
+                        <a href="../downloads/fan-source-code.zip" download class="download-btn">
+                            Source Code
+                        </a>
+
+                        <a href="../downloads/fan-project-report.pdf" target="_blank" class="download-btn">
+                            Project Report
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Thembalethu Skosana | Microcontroller Project Portfolio</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
